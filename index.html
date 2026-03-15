@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Task Manager</h1>
+
+        <div class="top-bar">
+            <input id="searchInput" placeholder="Search tasks">
+            <button id="darkToggle">🌙</button>
+            <button onclick="exportTasks()">Export</button>
+        </div>
+
+        <div class="input-section">
+            <input id="taskInput" placeholder="New task">
+
+            <input type="date" id="dueDate">
+
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <button id="addBtn">Add</button>
+        </div>
+
+        <div class="filters">
+            <button data-filter="all">All</button>
+            <button data-filter="completed">Completed</button>
+            <button data-filter="pending">Pending</button>
+        </div>
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <span id="totalTasks">0</span>
+                <p>Total</p>
+            </div>
+
+            <div class="stat-box">
+                <span id="completedTasks">0</span>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-box">
+                <span id="pendingTasks">0</span>
+                <p>Pending</p>
+            </div>
+
+            <div class="stat-box">
+                <span id="overdueTasks">0</span>
+                <p>Overdue</p>
+            </div>
+
+        </div>
+
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

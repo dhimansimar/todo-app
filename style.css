@@ -1,0 +1,136 @@
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    width: 520px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+.top-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input-section {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+input,
+select,
+button {
+    padding: 8px;
+}
+
+.filters button {
+    margin-right: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.completed span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.priority-high {
+    color: red;
+    font-weight: bold;
+}
+
+.priority-medium {
+    color: orange;
+}
+
+.priority-low {
+    color: green;
+}
+
+.actions button {
+    margin-left: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+#progress {
+    height: 10px;
+    background: #4CAF50;
+    width: 0%;
+    border-radius: 5px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.stat-box {
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.stat-box span {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+.overdue span {
+    color: #ff3b3b;
+    font-weight: bold;
+}
+
+.overdue::after {
+    content: " ⚠ Overdue";
+    color: #ff3b3b;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark .container {
+    background: #1e1e1e;
+}
+
+.dark .stat-box {
+    background: #2c2c2c;
+}
